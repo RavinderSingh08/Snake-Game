@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+}
+
+.container{
+    background-image: url(bg.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playArea{
+    background-color: #f0dd90;
+    background-image: linear-gradient(132deg, #e2e482 20%, #b4cd37 100%);
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 90vmin;
+    height: 90vmin;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.snakeHead{
+    background: url(snake_head.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.snakeBody{
+    background: radial-gradient(#dcfd66 ,#7c9d02 100%);
+    border-radius: 15px;
+    transform: scale(0.8);
+}
+
+.snakeFood{
+    background: url(snake_food.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 230px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+#hiScoreBox{
+    position: absolute;
+    top: 100px;
+    right: 193px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Viaoda Libre', cursive;
+}
